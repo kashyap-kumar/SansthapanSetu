@@ -48,7 +48,7 @@ if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
         <!-- header section -->
         <header>
             <div class="header-child">
-                <div id="labour-photo" class="labour-photo"></div>
+                <a id="labour-photo" class="labour-photo" href="profile.html"><a href="profile.html"> </a></a>
                 <div id="labour-info" class="labour-info">
                     <h1 id="labour-name"><?= $_SESSION["labour_name"] ?></h1>
                     <p id="labour-phno">Phone: <?= $_SESSION["labour_phone"] ?></p>
@@ -92,7 +92,7 @@ if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
                 <div class="learn-card">
                     <h1>Learn your work</h1>
                     <div class="btn-container">
-                        <a href="">
+                        <a href="learnYourWork.html">
                             <button>Click here</button>
                         </a>
                     </div>
