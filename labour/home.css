@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Laila", serif;
+}
+
+/* header section */ 
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    background: #364df8;
+}
+
+.header-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width: 70%;
+    height: 100%;
+}
+
+.labour-photo {
+    background: lightblue;
+    background-image: url("../images/avatar.png");
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: auto 3%;
+}
+
+.labour-info {
+    width: 50%;
+    height: 80px;
+    margin: auto 0px;
+    color: white;
+}
+
+.labour-info h1 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.labour-info p {
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 0px;
+}
+
+/* main container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+/* search bar */
+
+.searchbar-container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+.searchbar-container input, button{
+    height: 100%;
+    border: none;
+    margin: 0px;
+    padding: 10px 25px;
+    font-size: 16px;
+    background-color: #e5e9fc;
+}
+
+.searchbar-container input {
+    width: 80%;
+    border-radius: 20px 0 0 20px;
+}
+
+.searchbar-container button {
+    width: 20%;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.searchbar-container input:focus {
+    outline: none;
+}
+
+/* job cards */
+
+.jobcard-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    background: #d7dbfe;
+}
+
+.job {
+    background: #364df8;
+    color: white;
+    width: 95%;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 30px 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.job button {
+    background-color: #38b000;
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.job button:active {
+    background-color: #3fa410;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+}
+
+/* learning sectioin */
+
+.learning-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 20px;
+    background: #d7dbfe;
+}
+
+.learn-card {
+    color: white;
+    width: 95%;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 30px 60px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-image: url("../images/learn_your_work.jpg");
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: cover;
+    background-position: center;
+}
+
+.learn-card button {
+    background-color: #38b000;
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.learn-card button:active {
+    background-color: #3fa410;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+}
+
+/* footer section */
+
+footer {
+    background-color: #14151e;
+    color: #e2eeff;
+    margin-top: 20px;
+    padding: 20px;
+}
