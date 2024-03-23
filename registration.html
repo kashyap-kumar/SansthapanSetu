@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Xongsthapon Setu</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./source-file/img/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form action="">
+                <!-- Name -->
+                <div class="input-name">
+                    <i class="fa fa-star fa-user"></i>
+                    <input type="text" placeholder="First Name" class="name" required>
+
+                    <span class="span">
+                        <i class="fa fa-star fa-user"></i>
+                    <input type="text" placeholder="Last Name" class="name" required>
+                    </span>
+                </div>
+                <!-- Email -->
+                <div class="input-name">
+                    <i class="fa fa-star fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" class="text-name" required>
+                </div>
+                <!-- Phone Number -->
+                <div class="input-name">
+                    <i class="fa fa-star fa-phone"></i>
+                    <input type="number" placeholder="Phone Number" class="text-name" required>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-star fa-address-book"></i>
+                    <input type="text" placeholder="City / Village" class="text-name" required>
+                </div>
+                <!-- Password -->
+                <div class="input-name">
+                    <i class="fa fa-star fa-lock"></i>
+                    <input type="password" placeholder="Password" class="text-name" required>
+                </div>
+                <div class="input-name">
+                    <i class="fa fa-star fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" class="text-name" required>
+                </div>
+                
+                <!-- Radio Gender -->
+                <div class="input-name">
+                    <input type="radio" class="radio-button male" name="gender" required>
+                    <label for="gender">Male</label>
+
+                    <input type="radio" class="radio-button" name="gender">
+                    <label for="gender">Female</label>
+
+                    <input type="radio" class="radio-button" name="gender">
+                    <label for="gender">Others</label>
+                </div>
+                <div class="input-name">
+                    <select class="role" id="" required>
+                        <option value="" disabled selected>Sign-up as</option>
+                        <option value="">Employer</option>
+                        <option value="">Labourer</option>
+                    </select>
+                </div>
+                <div class="input-name">
+                    <input type="checkbox" class="check-button" name="check-button" id="check-button" required>
+                    <label for="check-button"><a href="#" target="_blank">I accept the Terms and Conditions</a></label>
+                </div>
+                <div class="input-name"><button type="submit" class="button">Register</button></div>
+
+                <div class="input-name"><a href="login.html">Want to Log in? LOG IN!</a></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
