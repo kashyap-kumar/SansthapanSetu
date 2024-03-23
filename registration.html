@@ -3,66 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Xongsthapon Setu</title>
+    <title>Register | SansthapanSetu</title>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="./source-file/img/Logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <h2>Registration Form</h2>
+        <p id="message"></p>
         <div class="form-container">
-            <form action="">
+            <form id="registrationForm">
                 <!-- Name -->
                 <div class="input-name">
                     <i class="fa fa-star fa-user"></i>
-                    <input type="text" placeholder="First Name" class="name" required>
-
-                    <span class="span">
-                        <i class="fa fa-star fa-user"></i>
-                    <input type="text" placeholder="Last Name" class="name" required>
-                    </span>
+                    <input type="text" placeholder="Your Name" id="name" class="name" required>
                 </div>
                 <!-- Email -->
                 <div class="input-name">
                     <i class="fa fa-star fa-envelope"></i>
-                    <input type="email" placeholder="Email Address" class="text-name" required>
+                    <input type="email" placeholder="Email Address" id="email" class="text-name" required>
                 </div>
                 <!-- Phone Number -->
                 <div class="input-name">
                     <i class="fa fa-star fa-phone"></i>
-                    <input type="number" placeholder="Phone Number" class="text-name" required>
+                    <input type="number" placeholder="Phone Number" id="phone" class="text-name" required>
                 </div>
                 <div class="input-name">
                     <i class="fa fa-star fa-address-book"></i>
-                    <input type="text" placeholder="City / Village" class="text-name" required>
+                    <input type="text" placeholder="City / Village" id="city" class="text-name" required>
                 </div>
                 <!-- Password -->
                 <div class="input-name">
                     <i class="fa fa-star fa-lock"></i>
-                    <input type="password" placeholder="Password" class="text-name" required>
+                    <input type="password" placeholder="Password" id="password" class="text-name" required>
                 </div>
-                <div class="input-name">
+                <!-- <div class="input-name">
                     <i class="fa fa-star fa-lock"></i>
                     <input type="password" placeholder="Confirm Password" class="text-name" required>
-                </div>
+                </div> -->
                 
                 <!-- Radio Gender -->
                 <div class="input-name">
-                    <input type="radio" class="radio-button male" name="gender" required>
+                    <input type="radio" class="radio-button male" name="gender" value="male" required>
                     <label for="gender">Male</label>
 
-                    <input type="radio" class="radio-button" name="gender">
+                    <input type="radio" class="radio-button" name="gender" value="female">
                     <label for="gender">Female</label>
 
-                    <input type="radio" class="radio-button" name="gender">
+                    <input type="radio" class="radio-button" name="gender" value="others">
                     <label for="gender">Others</label>
                 </div>
                 <div class="input-name">
-                    <select class="role" id="" required>
+                    <select class="role" id="role" required>
                         <option value="" disabled selected>Sign-up as</option>
-                        <option value="">Employer</option>
-                        <option value="">Labourer</option>
+                        <option value="employer">Employer</option>
+                        <option value="labour">Labourer</option>
                     </select>
                 </div>
                 <div class="input-name">
@@ -75,5 +71,8 @@
             </form>
         </div>
     </div>
+
+    <script src="./scripts/registration.js"></script>
+
 </body>
 </html>

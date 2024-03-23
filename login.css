@@ -13,7 +13,7 @@ body{
     background-color: #ffffff;
     width: 550px;
     padding: 25px;
-    margin: 50px auto 0;
+    margin: 50px auto;
     border-top: 5px solid #364df8;
     border-bottom: 5px solid #14151e;
     box-shadow: 0 0  10px 4px rgba(0, 0, 0, 0.6);
@@ -26,6 +26,11 @@ body{
     padding: 10px;
     text-align: center;
 }
+.container #message {
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
 .container .input-name{
     width: 90%;
     position: relative;
@@ -36,7 +41,7 @@ body{
     padding: 8px 11px;
 }
 .name{
-    width: 45%;
+    width: 100%;
     padding: 10px 0 10px 41px;
 }
 
