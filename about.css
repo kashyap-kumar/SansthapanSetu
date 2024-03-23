@@ -1,0 +1,38 @@
+/* Style for About Page */
+.about {
+    text-align: center;
+    padding: 30px;
+}
+.about .heading{
+    margin-top: 50px;
+}
+.heading h2{
+    font-weight: 900;
+    font-size: 24px;
+}
+.about-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px 0 10px;
+}
+.about-content{
+    text-align: justify;
+    margin-right: 40px;
+}
+.about-image {
+    width: 400px;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+h4{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 30px;
+}

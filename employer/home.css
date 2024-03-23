@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #364df8; /* brand color */
+    --secondary-color: #14151e; /* bold text */
+    --tertiary-color: #30425e; /* body text */
+}
+body {
+    background-color: var(--secondary-color);
+    font-family: "Laila", serif;
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+
+#postjob {
+    width: 380px;
+    padding: 20px;
+    border-radius: 6px;
+}
+#postjob input, #postjob select, #postjob textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--tertiary-color);
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    color: white;
+}
+#postjob button {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+

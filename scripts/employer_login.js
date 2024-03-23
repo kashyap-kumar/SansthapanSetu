@@ -12,19 +12,19 @@ loginForm.addEventListener("submit", async (event) => {
 
 async function handleLogin(phone, password) {
     try {
-        const response = await fetch("api/login.php", {
+        const response = await fetch("../api/employer_login.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({ phone, password }),
         });
-        
+
         const data = await response.json();
 
         if (data.success) {
             // Redirect to the home feed
-            window.location.href = "labour/home.php";
+            window.location.href = "home.php";
         } else {
             messageElement.textContent = data.message;
         }

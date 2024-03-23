@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $data["password"];
 
     // Prepare and execute the SQL query
-    $stmt = $conn->prepare("SELECT * FROM labours WHERE ph_no = ?");
+    $stmt = $conn->prepare("SELECT * FROM employers WHERE ph_no = ?");
     $stmt->bind_param("s", $phone);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -24,10 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Verify the password
         if (password_verify($password, $hash)) {
-            $_SESSION["authenticated"] = true;
-            $_SESSION["labour_name"] = $row["name"];
-            $_SESSION["labour_phone"] = $row["ph_no"];
-            $_SESSION["labour_id"] = $row["id"];
+            $_SESSION["employer_authenticated"] = true;
+            $_SESSION["employer_name"] = $row["name"];
+            $_SESSION["employer_phone"] = $row["ph_no"];
+            $_SESSION["employer_id"] = $row["id"];
 
             $response = [
                 "success" => true,

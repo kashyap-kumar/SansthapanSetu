@@ -15,7 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $data["role"];
 
     // Check if the email already exists
-    $stmt = $conn->prepare("SELECT * FROM labours WHERE ph_no = ?");
+    if($role == "labour") 
+        $stmt = $conn->prepare("SELECT * FROM labours WHERE ph_no = ?");
+    else
+        $stmt = $conn->prepare("SELECT * FROM employers WHERE ph_no = ?");
+        
     $stmt->bind_param("s", $phone);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -32,8 +36,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO `labours` (`ph_no`, `name`, `email`, `city`, `gender`, `password`) VALUES (?, ?, ?, ?, ?, ?)";
 
         // Insert the new user into the database
-        $stmt = $conn->prepare("INSERT INTO `labours` (`ph_no`, `name`, `email`, `city`, `gender`, `password`) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssss", $phone, $name, $email, $city, $gender, $hash);
+        if($role == "labour") {
+            $stmt = $conn->prepare("INSERT INTO `labours` (`ph_no`, `name`, `email`, `city`, `gender`, `password`) VALUES (?, ?, ?, ?, ?, ?)");
+            $stmt->bind_param("ssssss", $phone, $name, $email, $city, $gender, $hash);
+        } else {
+            $stmt = $conn->prepare("INSERT INTO `employers` (`ph_no`, `name`, `email`, `city`, `password`) VALUES (?, ?, ?, ?, ?)");
+            $stmt->bind_param("sssss", $phone, $name, $email, $city, $hash);
+        }
+
         $stmt->execute();
 
         $response = [
