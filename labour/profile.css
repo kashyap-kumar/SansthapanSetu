@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Laila", serif;
+}
+
+body {
+    background-color: #cdd2fa;
+}
+
+/* header section */ 
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background: #364df8;
+}
+
+header h1 {
+    margin-top: 15px;
+    color: white;
+}
+
+/* main container */
+
+.container {
+    width: 70%;
+    padding: 0;
+    margin: auto;
+}
+
+/* labour information form */
+
+.labour-info {
+    width: 100%;
+    padding: 60px 100px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.labour-info h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.f-col {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 400px;
+}
+
+.f-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col input, label {
+    width: 400px;
+    height: 40px;
+}
+
+.file-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.labour-info input {
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #576af653;
+    opacity: 0.6;
+}
+
+.labour-info input:focus {
+    outline: none;
+    border-bottom: 2px solid #576af6;
+}
+
+.labour-info label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 40px;
+    height: 20px;
+}
+
+.file-row label {
+    width: 200px;
+}
+
+.file-row input {
+    border: none;
+    opacity: 0.8;
+    margin-top: 40px;
+}
+
+.file-row input:focus {
+    border: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.btn-container button {
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #38b000;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn-container button:hover {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    background-color: #45a01b;
+    color: rgb(237, 221, 221);
+}
+
+.btn-container button:active {
+    background-color: #4fa527;
+}
+
+/* applied jobs section */
+
+.applied-jobs {
+    width: 100%;
+    padding: 50px 100px;
+    margin: 20px 0;
+    border-radius: 20px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    text-align: center;
+}
+
+.applied-jobs h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.job-application {
+    padding: 20px 40px;
+    margin: 20px auto;
+    border-bottom: 2px solid #576af653;
+    width: 70%;
+}
+
+.job-application p {
+    margin: 0px;
+}
+
+/* footer section */
+
+footer {
+    background-color: #14151e;
+    color: #e2eeff;
+    margin-top: 20px;
+    padding: 20px;
+}
